@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background:black;color:white;text-align:center;padding-top:100px;">
+
+  <h2>Tap the button 👇</h2>
+
+  <button onclick="playSound()" style="font-size:20px;padding:15px 25px;">
+    ▶ PLAY SOUND
+  </button>
+
+  <audio id="sound">
+    <source src="https://raw.githubusercontent.com/26sai/Birthday-song/main/ruth-b-dandelions-lyrics_RdA9xVEC.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function playSound() {
+      document.getElementById("sound").play();
+    }
+  </script>
+
+</body>
+</html>
